@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Sidebar Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+        aside {
+            width: 300px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .sidebar-header {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .sidebar-content {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <h1>Main Content Area</h1>
+    <p>This is the main content area. Here you can place your primary content, articles, blog posts, etc.</p>
+    <p>More content can be added here as needed. The sidebar on the right contains additional information and links.</p>
+</main>
+
+<aside>
+    <div class="sidebar-header">Related Articles</div>
+    <div class="sidebar-content">
+        <ul>
+            <li><a href="#">How to Use HTML5 Semantic Elements</a></li>
+            <li><a href="#">Understanding CSS Flexbox</a></li>
+            <li><a href="#">JavaScript ES6 Features</a></li>
+            <li><a href="#">Responsive Web Design Techniques</a></li>
+        </ul>
+    </div>
+    
+    <div class="sidebar-header">Tags</div>
+    <div class="sidebar-content">
+        <span>#HTML5</span>
+        <span>#CSS3</span>
+        <span>#JavaScript</span>
+        <span>#WebDevelopment</span>
+    </div>
+    
+    <div class="sidebar-header">About the Author</div>
+    <div class="sidebar-content">
+        <p>John Doe is a web developer with over 10 years of experience in building and designing websites. He specializes in HTML5, CSS3, and JavaScript.</p>
+    </div>
+</aside>
+
+</body>
+</html>

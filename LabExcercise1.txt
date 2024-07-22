@@ -1,0 +1,5 @@
+Identify a domain of your choice, list out ten entities in the
+domain. For each entity, identify minimum 10 attributes and assign the data
+type for each attribute with proper justification.
+After identifying all the entities and attributes, draw an Entity Relationship Diagram using Creately or any other tool with your preference.
+Submit a pdf containing a list of ENTITIES and ATTRIBUTES as given in the Sample program followed by a ER Diagram. Submit as a single pdf

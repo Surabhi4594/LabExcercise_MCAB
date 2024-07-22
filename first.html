@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        progress, meter {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="country">Country:</label>
+        <input list="countries" id="country" name="country">
+        <datalist id="countries">
+            <option value="United States">
+            <option value="Canada">
+            <option value="Mexico">
+            <option value="United Kingdom">
+            <option value="Australia">
+        </datalist>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+
+        <label for="satisfaction">Satisfaction Level:</label>
+        <meter id="satisfaction" min="0" max="100" value="70" low="30" high="80" optimum="90">70%</meter>
+
+        <label for="progress">Form Completion:</label>
+        <progress id="progress" value="50" max="100">50%</progress>
+    </fieldset>
+
+    <fieldset>
+        <legend>Comments</legend>
+
+        <label for="comments">Your Comments:</label>
+        <textarea id="comments" name="comments" rows="5"></textarea>
+
+        <label for="result">Result of Your Last Action:</label>
+        <output id="result">No action taken</output>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
